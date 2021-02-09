@@ -67,36 +67,95 @@
         </nav>
       </div>
       <div class="col-sm">
-        <a href="signup.html" class="nav-link">Sign in</a>
+        <a href="signin.html" class="nav-link">Sign out</a>
       </div>
     </div>
   </div>
-  <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="assets/images/img1.jpg" class="d-block w-100" alt="...">
+  <div class="container8">
+    <div class="row">
+      <div class="col-9">
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="assets/images/img1.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="assets/images/img2.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="assets/images/img3.jpg" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </a>
+        </div>
       </div>
-      <div class="carousel-item">
-        <img src="assets/images/img2.jpg" class="d-block w-100" alt="...">
-      </div>
-      <div class="carousel-item">
-        <img src="assets/images/img3.jpg" class="d-block w-100" alt="...">
-      </div>
+      
+      <div class="col-3">  <div class="login-wrap">
+        <div class="login-html">
+          <h1>Welcome to Arif Liquor</h1><br><br>
+          <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Sign In</label>
+          <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Sign Up</label>
+          <div class="login-form">
+            <div class="sign-in-htm">
+              <div class="group">
+                <label for="user" class="label">Username</label>
+                <input id="user" type="text" class="input">
+              </div>
+              <div class="group">
+                <label for="pass" class="label">Password</label>
+                <input id="pass" type="password" class="input" data-type="password">
+              </div>
+              <div class="group">
+                <input id="check" type="checkbox" class="check" checked>
+                <label for="check"><span class="icon"></span> Keep me Signed in</label>
+              </div>
+              <div class="group">
+                <input id="signinbtn" type="submit" class="button" value="Sign In">
+              </div>
+              <div class="hr"></div>
+              <div class="foot-lnk">
+                <a href="#forgot">Forgot Password?</a>
+              </div>
+            </div>
+            <div class="sign-up-htm">
+              <div class="group">
+                <label for="user"  class="label">Username</label>
+                <input id="user" type="text" class="input">
+              </div>
+              <div class="group">
+                <label for="pass"  class="label">Password</label>
+                <input id="pass" type="password" class="input" data-type="password">
+              </div>
+              <div class="group">
+                <label for="pass"  class="label">Email Address</label>
+                <input id="pass" type="text" class="input">
+              </div>
+              <div class="group">
+                <input type="submit" class="button" id="signupbtn" value="Sign Up">
+              </div>
+              <div class="hr"></div>
+              <div class="foot-lnk">
+                <label for="tab-1">Already Member?</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div></div>
     </div>
-    <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </a>
   </div>
+
   <div class="text1">
     <h1>What'll you have?</h1>
 
   </div>
-  <div class="choice">
+  <div class="nav-link">
     <div class="row row-cols-1 row-cols-md-3 g-4">
       <div class="col">
         <div class="card">
@@ -130,6 +189,7 @@
           </div>
           <div class="card-footer">
             <p>20 birr</p>
+            <button type="button" id="orderbtn" class="btn btn-secondary">Order</button>
           </div>
         </div>
 
@@ -140,6 +200,7 @@
           </div>
           <div class="card-footer">
             <p>20 birr</p>
+            <button type="button" id="orderbtn" class="btn btn-secondary">Order</button>
           </div>
         </div>
 
@@ -152,6 +213,7 @@
           </div>
           <div class="card-footer">
             <p>20 birr</p>
+            <button type="button" id="orderbtn" class="btn btn-secondary">Order</button>
           </div>
         </div>
         <div class="card">
@@ -162,6 +224,7 @@
           </div>
           <div class="card-footer">
             <p>20 birr</p>
+            <button type="button" id="orderbtn" class="btn btn-secondary">Order</button>
           </div>
         </div>
       </div>
@@ -170,8 +233,8 @@
 
   </div>
   
-  
-
+  <script src="assets/js/signup.js"></script>
+  <script src="assets/js/product.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
 </body>
